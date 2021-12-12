@@ -1,35 +1,40 @@
+<?php 
+$elements = 5;
+
+>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet"> 
+    
+    <!-- Stylesheet Link -->
     <link rel="stylesheet" type="text/css" href="index.css"> 
     <title>Document</title>
 </head>
 <body >
-    <form>
-        <!-- <h2>your tasks</h2> -->
-
-        <table>
-            <th style="text-align: left;">
-                your tasks 
-            </th>
-            <tr>
-                <td><input type="checkbox"> <input type="text"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"> <input type="text"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"> <input type="text"></td>
-            </tr>
-        </table>
-
-        <!-- <input type="checkbox"> <input type="text"> -->
+    <h2>your tasks</h2>
+    <form action="POST" target="index.html">
+      <input type="text" name="new_task" placeholder="add new task">
+      <input type="submit" value="add">
     </form>
+    <br>
+    <br>
+
+    <h2>active tasks:</h2>
+    <ul>
+        <?php foreach(elements as element):?>
+        <li><input type="checkbox"> <?php echo element;?></li>
+        <?endforeach;?>
+       <li><input type="checkbox"> to be added</li>
+    </ul>
+    
 </body>
 </html>
