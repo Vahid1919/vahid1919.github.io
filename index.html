@@ -21,31 +21,35 @@ $elements = 5;
 </head>
 <body>
     <nav class="container">
-        <div class="container-item" style="flex: 5 1 100px">AAA</div>
-        <div class="container-item" style="flex: 5 1 100px">BBB</div>
-        <div class="container-item" style="flex: 5 1 100px">CCC</div>
-        <div class="container-item" style="flex: 5 1 100px">DDD</div>
+        <div class="nav-title"><h2>Settings</h2></div>
+        <div class="container-item" style="order: 1; margin-top: 10vh">AAA</div>
+        <div class="container-item" style="order: 2">BBB</div>
+        <div class="container-item" style="order: 3;">CCC</div>
+        <div class="container-item" style="order: 4; margin-top: auto;">DDD</div>
     </nav>
-
     <div class="non-nav">
         <img id="top-image" src="36914.jpg">
-    <h1>Todays Tasks</h1>
+
+        <div class="non-image">
+            <h1>Todays Tasks</h1>
 
 
-    <form action="POST" target="index.html">
-      <input type="text" name="new_task" placeholder="add new task">
-      <input type="submit" value="add">
-    </form>
-    <br>
-    <br>
+            <form action="POST" target="index.html">
+            <input type="text" name="new_task" placeholder="add new task">
+            <input type="submit" value="add">
+            </form>
+            <br>
+            <br>
 
-    <h2>active tasks:</h2>
-    <ul>
-        <?php foreach(elements as element):?>
-        <li><input type="checkbox"> <?php echo element;?></li>
-        <?endforeach;?>
-       <li><input type="checkbox"> to be added</li>
-    </ul>
+            <h2>active tasks:</h2>
+            <ul>
+                <?php foreach(elements as element):?>
+                <li><input type="checkbox"> <?php echo element;?></li>
+                <?endforeach;?>
+            <li><input type="checkbox"> to be added</li>
+            </ul>
+                </div>
+    
     </div>
     
 </body>
