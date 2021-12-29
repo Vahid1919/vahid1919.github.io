@@ -12,7 +12,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-weight: bolder;
 }
 .non-nav{
-    margin: 0 0 0 6em;
+    margin: 0 0 0 3em;
 }
 h2{
     font-family: 'Roboto Slab', serif;
@@ -24,8 +24,7 @@ li{
 
 #top-image{
     height: 200px;
-    width: 100%;
-    margin: 0 0 0 0;
+    width: 100vw;
     float: top;
     object-fit: cover;
 }
@@ -34,19 +33,20 @@ li{
     position: fixed;
     display: flex;
     background: black;
-    margin: 0 0 0 0em;
-    width: 6em;
+    width: 3em;
     height: 100vh;
-    float: lft;
     flex-direction: column;
-    justify-content: space-around;
-    
+    transition-duration: 400ms;  
+}
+
+.container:hover{
+    width: 40%;
 }
 
 .container-item{
-    text-align:center;
-    padding: 5px 5px 5px 5px;
-    border-radius: 7%;
+    text-align:left;
+    margin: 2px 2px;
+    padding: 2px 2px;
 }
 
 .container-item:hover{
