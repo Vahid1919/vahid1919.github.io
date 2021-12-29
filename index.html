@@ -20,14 +20,15 @@ $elements = 5;
     <title>Squad Goals</title>
 </head>
 <body>
-    <div class="container">
+    <nav class="container">
         <div class="container-item" style="flex: 5 1 100px">Squad's List</div>
         <div class="container-item" style="flex: 5 1 100px">Completed</div>
         <div class="container-item" style="flex: 5 1 100px">Settings</div>
         <div class="container-item" style="flex: 5 1 100px">Log out</div>
-    </div>
+    </nav>
 
-    <img id="top-image" src="36914.jpg">
+    <div class="non-nav">
+        <img id="top-image" src="36914.jpg">
     <h1>Todays Tasks</h1>
 
 
@@ -45,6 +46,7 @@ $elements = 5;
         <?endforeach;?>
        <li><input type="checkbox"> to be added</li>
     </ul>
+    </div>
     
 </body>
 </html>

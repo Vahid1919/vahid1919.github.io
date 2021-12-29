@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 0;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -11,7 +11,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: white;
     font-weight: bolder;
 }
-
+.non-nav{
+    margin: 0 0 0 6em;
+}
 h2{
     font-family: 'Roboto Slab', serif;
 }
@@ -23,14 +25,22 @@ li{
 #top-image{
     height: 200px;
     width: 100%;
-
+    margin: 0 0 0 0;
+    float: top;
     object-fit: cover;
 }
 
 .container{
+    position: fixed;
     display: flex;
-    flex-direction: row;
+    background: black;
+    margin: 0 0 0 0em;
+    width: 6em;
+    height: 100vh;
+    float: lft;
+    flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .container-item{
