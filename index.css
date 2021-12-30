@@ -13,7 +13,6 @@ body{
 }
 .non-nav{
     margin: 0 0 0 3em;
-    transition: 800ms ease;
 }
 
 .non-image{
@@ -37,8 +36,8 @@ li{
     height: 100%;
     flex-direction: column;
     z-index: 1;
-    transition: width 800ms ease;
-    overflow: hidden; 
+    transition: width 800ms;
+    overflow:hidden;
 }
 
 #top-image{
@@ -56,12 +55,8 @@ li{
 }
 
 .container:hover{
-    width: 40%;
+    width: 50%;
 
-}
-
-.container:hover + .non-nav{
-    filter:blur(4px) grayscale(60%);
 }
 
 .container:hover .nav-title{
@@ -84,7 +79,7 @@ li{
 
 .nav-text{
     margin-left: 4em;
-    margin-bottom: 2.5%;
+    margin-bottom: 1%;
     transition: width 200ms ease-in;
 }
 
