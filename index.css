@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0 0 0 0;
+    margin: 0;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -29,27 +29,43 @@ li{
     list-style-type: none;
 }
 
+.container{
+    position:fixed;
+    display: flex;
+    background: linear-gradient(to right, rgb(43, 43, 43),rgba(37, 37, 37, 0) ) ;
+    width: 3rem;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 1;
+    transition: width 800ms ease;
+    overflow: hidden; 
+}
+
+/* .top-nav{
+display: flex;
+height: 50px;
+width: 100%;
+background-color: rgb(255, 104, 34);
+margin-left: 3rem;
+margin-top: 0;
+}
+#top-nav-item{
+} */
+
 #top-image{
     height: 200px;
     width: 100%;
     object-fit: cover;
 }
 
-.container{
-    position:fixed;
-    display: flex;
-    background: rgb(37, 37, 37);
-    width: 3rem;
-    height: 100%;
-    flex-direction: column;
-    z-index: 1;
-    transition: width 600ms ease;
-    overflow: hidden; 
-}
+
 
 .nav-title{
-    visibility:hidden;
+    opacity: 0;
+    text-align: center;
+    transition: 800ms ease-in-out;
 }
+
 .container:hover{
     width: 40%;
 
@@ -60,7 +76,7 @@ li{
 }
 
 .container:hover .nav-title{
-    visibility:visible;
+    opacity: 1;
     text-align: center;
 }
 
@@ -69,16 +85,17 @@ li{
     align-items: center;
     height: 3rem;
     text-decoration: none;
+    transition: 800ms ease-in-out;
 }
 
 .container-item:hover {
-    background: linear-gradient(to left , rgb(29, 91, 161), rgb(95, 170, 255), rgb(45, 143, 255));
+    background: linear-gradient(to right , rgba(29, 91, 161, 1), rgba(95, 170, 255, 0.5), rgba(126, 186, 255, 0));
 }
 
 
 .nav-text{
     margin-left: 4em;
-    margin-bottom: 0.35rem;
+    margin-bottom: 2.5%;
     transition: width 200ms ease-in;
 }
 
