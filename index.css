@@ -12,12 +12,12 @@ body{
     font-weight: bolder;
 }
 .non-nav{
-    margin: 0 0 0 0em;
+    margin: 0 0 0 3em;
     transition: 800ms ease;
 }
 
 .non-image{
-    margin: 0 0 0 4em;
+    margin: 0 0 0 1em;
 }
 
 h1, h2{
@@ -32,25 +32,14 @@ li{
 .container{
     position:fixed;
     display: flex;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(37, 37, 37, 0) ) ;
+    background:rgba(37, 37, 37, 1);
     width: 3rem;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     z-index: 1;
     transition: width 800ms ease;
     overflow: hidden; 
 }
-
-/* .top-nav{
-display: flex;
-height: 50px;
-width: 100%;
-background-color: rgb(255, 104, 34);
-margin-left: 3rem;
-margin-top: 0;
-}
-#top-nav-item{
-} */
 
 #top-image{
     height: 200px;
@@ -89,7 +78,7 @@ margin-top: 0;
 }
 
 .container-item:hover {
-    background: linear-gradient(to right , rgba(29, 91, 161, 1), rgba(95, 170, 255, 0.5), rgba(126, 186, 255, 0));
+    background: linear-gradient(to right , rgba(29, 91, 161, 1), rgba(95, 170, 255, 1), rgb(34, 76, 124));
 }
 
 
