@@ -12,12 +12,12 @@ body{
     font-weight: bolder;
 }
 .non-nav{
-    margin: 0 0 0 2em;
+    margin: 0 0 0 1em;
     transition: 800ms;
 }
 
 .non-image{
-    margin: 0 0 0 2em;
+    margin: 0 0 0 3em;
 }
 
 h1, h2{
