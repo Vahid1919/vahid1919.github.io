@@ -45,17 +45,17 @@ $elements = 5;
             <h1>Tasks</h1>
 
 
-            <form action="POST" target="index.html">
-            <input type="text" name="new_task" placeholder="add new task">
-            <input type="submit" value="add">
+            <form id="form-flex" action="POST" target="index.html">
+            <input type="text" id="task-input" name="new_task" placeholder="add new task">
+            <button type="submit" id="task-submit"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+              </svg></button></button>
+
             </form>
             <br>
             <br>
 
             <ul>
-                <!-- <?php foreach(elements as element):?>
-                <li><input type="checkbox"> <?php echo element;?></li>
-                <?endforeach;?> -->
             <li><input type="checkbox"> to be added</li>
             </ul>
                 </div>
