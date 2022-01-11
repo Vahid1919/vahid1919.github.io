@@ -156,7 +156,7 @@ li{
 
 
 .task-container{
-    background: rgb(94, 94, 94);
+    background: rgb(37,37,37);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -164,7 +164,7 @@ li{
 
 .check-box{
     appearance: none;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
     height: 3.5rem;
     width: 3.5rem;
     cursor: pointer;
@@ -177,12 +177,13 @@ li{
     font-size: 2rem; 
     display: flex;
     justify-content: center;
-    padding-top: 0.55rem;    
+    padding-top: 0.55rem;  
 
  }
 
 .check-box:checked{
    background: rgb(72, 255, 0);
+    
 }
 
 .task-item{
