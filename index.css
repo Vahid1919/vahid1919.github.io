@@ -197,8 +197,9 @@ li{
     padding-left: 5%;
 }
 
-input[class="check-box task-item"] ~ label[class="task-item task-text"]{
-    text-decoration: line-through
+input:checked ~ label{
+    text-decoration: line-through;
+    font-style: italic;
      
  }
 
