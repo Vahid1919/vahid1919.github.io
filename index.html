@@ -18,6 +18,7 @@ $elements = 5;
     
     <!-- Stylesheet Link -->
     <link rel="stylesheet" type="text/css" href="index.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> 
     <title>Squad Goals</title>
 </head>
 <body>
@@ -42,23 +43,26 @@ $elements = 5;
         <img id="top-image" src="36914.jpg">
 
         <div class="non-image">
-            <h1>Tasks</h1>
 
 
-            <form id="form-flex" action="POST" target="index.html">
-            <input type="text" id="task-input" name="new_task" placeholder="add new task">
-            <button type="submit" id="task-submit"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-              </svg></button></button>
+              <form id="form-flex" action="POST" target="index.html">
+              <input type="text" id="task-input" name="new_task" placeholder="add new task">
+              <button type="submit" id="task-submit"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg></button></button>
 
-            </form>
-            <br>
-            <br>
+              </form>
+              <br>
+              <br>
 
-            <ul>
-            <li><input type="checkbox"> to be added</li>
-            </ul>
-                </div>
+              <div id="active-tasks">
+                <div class="task-container">
+                  <label for="task-1" class="task-item task-text" style="width:80%;"> be added</label> <input type="checkbox" class="check-box task-item" id="task-1">
+                 </div>
+              </div>
+              
+  
+          </div>
     
     </div>
     

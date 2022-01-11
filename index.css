@@ -111,6 +111,7 @@ li{
 
 #task-input{
     height: 50px;
+    width: 40%;
     margin: 0 2em;
     padding-left: 1rem;
     width: 40%;
@@ -141,6 +142,58 @@ li{
 #task-submit:hover svg{
     height: 30px;
     width: 30px;
+}
+
+#active-tasks{
+    height: 3.5rem;
+    width: 80%;
+}
+
+
+
+.task-container{
+    background: rgb(94, 94, 94);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-box{
+    appearance: none;
+    background-color: rgb(253, 253, 253);
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.check-box:after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 2rem; 
+    display: flex;
+    justify-content: center;
+    padding-top: 0.55rem;    
+
+ }
+
+.check-box:checked{
+   background: rgb(72, 255, 0);
+}
+
+.task-item{
+    transition: 200ms;
+}
+.task-item:hover{
+    font-size:large;
+    filter: brightness(120%);
+}
+
+.task-text{
+    flex: 1 auto;
+    background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206));
+    line-height: 3.5rem;
+    padding-left: 2%;
 }
 
 
