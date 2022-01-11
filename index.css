@@ -106,25 +106,29 @@ li{
 #form-flex{
     display: flex;
     margin-top: 2em;
-    align-items:center;
+    
+    justify-content:space-between;
 }
 
 #task-input{
     height: 50px;
-    width: 40%;
-    margin: 0 2em;
+    
+    /* margin: 0 2em; */
     padding-left: 1rem;
-    width: 40%;
+    flex: 1 auto;
+    margin-right: 1em;
+    /* width: 40%; */
 }
 #task-submit{
     height: 54px;
     width: 54px;
-    border: solid 4px gray;
+    border: solid 2px rgb(128, 128, 128);
     border-radius: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 6em;
     
     color:rgba(255, 255, 255, 0.932);
     background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206));
@@ -146,7 +150,7 @@ li{
 
 #active-tasks{
     height: 3.5rem;
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -191,7 +195,7 @@ li{
 
 .task-text{
     flex: 1 auto;
-    background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206));
+    /* background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206)); */
     line-height: 3.5rem;
     padding-left: 2%;
 }
