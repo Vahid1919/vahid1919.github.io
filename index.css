@@ -115,7 +115,7 @@ li{
     
     /* margin: 0 2em; */
     padding-left: 1rem;
-    flex: 1 auto;
+    flex: 1  auto;
     margin-right: 1em;
     /* width: 40%; */
 }
@@ -124,8 +124,8 @@ li{
     width: 54px;
     border: solid 2px rgb(128, 128, 128);
     border-radius: 100%;
-
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     margin-right: 6em;
@@ -156,7 +156,7 @@ li{
 
 
 .task-container{
-    background: rgb(37,37,37);
+    background: rgb(88, 88, 88);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,23 +182,29 @@ li{
  }
 
 .check-box:checked{
-   background: rgb(72, 255, 0);
+   background: rgb(113, 252, 58);
     
 }
 
 .task-item{
     transition: 200ms;
 }
-.task-item:hover{
-    font-size:large;
-    filter: brightness(120%);
-}
+
 
 .task-text{
     flex: 1 auto;
-    /* background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206)); */
     line-height: 3.5rem;
-    padding-left: 2%;
+    padding-left: 5%;
 }
+
+input[class="check-box task-item"] ~ label[class="task-item task-text"]{
+    text-decoration: line-through
+     
+ }
+
+ .task-text:hover{
+     font-size: large;
+    background-color: rgb(65, 65, 65);
+ }
 
 
