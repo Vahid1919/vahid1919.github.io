@@ -112,12 +112,12 @@ li{
 
 #task-input{
     height: 50px;
-    
+    width: 40%;
+    /* width: minmax(40%, 60%); */
     /* margin: 0 2em; */
     padding-left: 1rem;
-    flex: 1  auto;
+    /* flex: 1  auto; */
     margin-right: 1em;
-    /* width: 40%; */
 }
 #task-submit{
     height: 54px;
@@ -128,7 +128,7 @@ li{
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
-    margin-right: 6em;
+    margin-right: auto;
     
     color:rgba(255, 255, 255, 0.932);
     background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206));
@@ -157,19 +157,23 @@ li{
 
 .task-container{
     background: rgb(88, 88, 88);
-    /* background: rgb(255, 255, 255); */
+    
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    transition: color 300ms ease reverse;
 }
+
+.task-container:hover{
+    font-size: larger;
+    background: rgb(110, 110, 110);
+}
+
 
 .check-box{
     appearance: none;
-    background-color: rgb(88, 88, 88);
     color: rgb(235, 235, 235);
     height: 3.5rem;
     width: 3.5rem;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .check-box:after{
@@ -205,6 +209,7 @@ li{
     flex: 1 auto;
     line-height: 3.5rem;
     padding-left: 5%;
+    cursor:pointer;
 }
 
 input:checked ~ label{
@@ -212,9 +217,4 @@ input:checked ~ label{
     font-style: italic;
      
  }
-
- .task-text:hover{
-    font-size: large;
- }
-
 
