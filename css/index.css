@@ -42,9 +42,11 @@ li {
     rgba(37, 37, 37, 1) 20%,
     rgba(37, 37, 37, 0) 100%
   );
-  backdrop-filter: blur(3px);
+  /* background-color: rgba(37, 37, 37, 0.808); */
+  backdrop-filter: blur(6px);
   width: 3rem;
   height: 100%;
+  row-gap: 1rem;
   flex-direction: column;
   z-index: 1;
   transition: width 800ms;
@@ -82,16 +84,11 @@ li {
   align-items: center;
   height: 3rem;
   text-decoration: none;
-  transition: 800ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 
 .container-item:hover {
-  background: linear-gradient(
-    to right,
-    rgba(29, 91, 161, 1),
-    rgba(95, 170, 255, 1),
-    rgba(34, 76, 124, 0)
-  );
+  background: rgb(52, 147, 255);
 }
 
 .nav-text {
@@ -245,6 +242,10 @@ input[class="check-box task-item"]:checked
   #task-submit {
     height: 54px;
     width: 54px;
+  }
+
+  .container:hover {
+    width: 25%;
   }
 }
 
