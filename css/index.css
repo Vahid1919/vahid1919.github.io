@@ -160,7 +160,8 @@ li {
 
 .task-container {
   background: rgb(88, 88, 88);
-
+  margin-bottom: 0.1rem;
+  /* gap: 0.1em; */
   display: flex;
   transition: color 300ms ease reverse;
 }
@@ -176,7 +177,7 @@ input[class="check-box task-item"] {
 
   opacity: 0;
   position: absolute;
-
+  cursor: pointer;
   transition: 200ms;
 }
 

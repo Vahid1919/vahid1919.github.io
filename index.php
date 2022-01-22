@@ -34,7 +34,7 @@
     <form id="form-grid">
         <div class="grid-items" id="email"> <div style="order:2"><input type="text" id="email-input">  </div><div ><label id="label" for="email-input" > Email</label>  </div></div>
         <div class="grid-items" id="password"> <div style="order:2;"><input type="text" id="password-input">  </div><div ><label id="label" fid="label" or="password-input" > Password</label></div> </div>
-        <div class="grid-items" id="submit"> <input type="button" class="button-design" onclick= "window.location.href = 'dashboard.html';" value="Submit"></div>
+        <div class="grid-items" id="submit"> <input type="button" class="button-design" onclick= "window.location.href = 'dashboard.php';" value="Submit"></div>
         
     </form>
     
