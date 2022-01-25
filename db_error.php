@@ -11,17 +11,10 @@
     <h2>Database Error</h2>
     <p>
         <?php
-            printf($err_msg + "\n");
+            echo $err_msg;
+            echo "\n";
         ?>
     </p>
 
 </body>
 </html>
-
-<?php
-
-
-printf($err_msg + "\n");
-
-
-?>
