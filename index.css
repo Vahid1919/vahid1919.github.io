@@ -170,6 +170,7 @@ body{
     font-weight: 700;
     font-size: large;
     background-color: blueviolet;
+    cursor: pointer;
     transition: background-color 200ms ease, color 200ms ease;
 }
 
@@ -266,6 +267,14 @@ hr{
     background-color: rgb(255, 76, 76);
     z-index: -1;
     transition: transform 200ms ease, z-index 0ms ease-in-out 100ms;
+    cursor: pointer;
+    
+}
+
+.tags:hover{
+    
+    background-color: rgb(105, 105, 105);
+    
     
 }
 
