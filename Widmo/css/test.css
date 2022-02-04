@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(15, 15, 15);   
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23e8e8e8' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.non-nav{
+    margin: 0 0 0 1em;
+    transition: 800ms;
+}
+
+.non-image{
+    margin: 0 0 0 3em;
+}
+
+h1, h2{
+    font-family: 'Arvo', sans-serif;
+    font-weight: 700;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container{
+    position:fixed;
+    display: flex;
+    /* background:rgba(37, 37, 37, 1); */
+    background:linear-gradient(to right, rgba(37, 37, 37, 1) 20%,rgba(37, 37, 37, 0) 100%);
+    backdrop-filter: blur(3px);
+    width: 3rem;
+    height: 100%;
+    flex-direction: column;
+    z-index: 1;
+    transition: width 800ms;
+    overflow:hidden;
+}
+
+#top-image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.nav-title{
+    opacity: 0;
+    text-align: center;
+    transition: 800ms ease-in-out;
+}
+
+.container:hover{
+    width: 50%;
+
+}
+
+.container:hover + .non-nav{
+    filter: grayscale(60%) blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.container:hover .nav-title{
+    opacity: 1;
+    text-align: center;
+}
+
+.container-item{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    text-decoration: none;
+    transition: 800ms ease-in-out;
+}
+
+.container-item:hover {
+    background: linear-gradient(to right , rgba(29, 91, 161, 1), rgba(95, 170, 255, 1), rgba(34, 76, 124, 0));
+}
+
+
+.nav-text{
+    margin-left: 4em;
+    margin-bottom: 1%;
+    transition: width 200ms ease-in;
+}
+
+.container:hover .nav-text{
+    display: block;
+}
+
+
+#icon{
+    position: fixed;
+    height:30px;
+    width: 30px;
+    margin: 0 0 5px 10px;
+}
+
+#form-flex{
+    display: flex;
+    margin-top: 2em;
+    
+    justify-content:space-between;
+}
+
+#task-input{
+    height: 50px;
+    width: 40%;
+    /* width: minmax(40%, 60%); */
+    /* margin: 0 2em; */
+    padding-left: 1rem;
+    /* flex: 1  auto; */
+    margin-right: 1em;
+}
+#task-submit{
+    height: 54px;
+    width: 54px;
+    border: solid 2px rgb(128, 128, 128);
+    border-radius: 100%;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    
+    color:rgba(255, 255, 255, 0.932);
+    background: linear-gradient(to right , rgb(59, 109, 165), rgba(95, 170, 255, 1), rgb(86, 142, 206));
+}
+
+#task-submit svg{
+    height: 25px;
+    width: 25px;
+    transition: 200ms;
+}
+#task-submit:hover{
+    filter:saturate(150%);
+}
+
+#task-submit:hover svg{
+    height: 30px;
+    width: 30px;
+}
+
+#active-tasks{
+    height: 3.5rem;
+    width: 50em;
+}
+
+
+
+.task-container{
+    background: rgb(88, 88, 88);
+    
+    display: flex;
+    transition: color 300ms ease reverse;
+}
+
+.task-container:hover{
+    background: rgb(110, 110, 110);
+}
+
+
+input[class='check-box task-item']{
+    
+
+    margin-right: 3em;
+    justify-content: center;
+    align-self: center;
+
+    opacity: 0;
+    position: absolute;
+
+    transition: 200ms;
+    
+}
+
+.task-container label{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+}
+
+.task-container label::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+    color: white;
+    height:1.7em;
+    width: 1.7em;
+    margin-left: auto;
+    font-size: 2rem;
+    justify-self: center;
+    align-self: center;
+
+    border-radius: 100%;
+}
+
+input[class='check-box task-item']:checked + label::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f058";
+    color: rgb(64, 252, 164);  
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.task-text{
+    flex: 1 auto;
+
+    /*makes task text unselectable when clicked*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    line-height: 3.5rem;
+    padding-left: 5%;
+    
+}
+
+input[class='check-box task-item']:checked + label[class='task-item task-text'] > .actual-text{
+    text-decoration: line-through;
+    font-style: italic;
+ }
+
+

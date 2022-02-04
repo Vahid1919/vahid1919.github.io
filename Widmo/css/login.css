@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(15, 15, 15, 1);
+  /* background-color: rgba(255, 255, 255, 0.808); */
+  
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23e8e8e8' fill-opacity='0.03' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+
+  font-family: "Raleway", sans-serif;
+  font-weight: regular;
+}
+
+#login-box {
+  background-color: rgb(207, 207, 207);
+  background-image: none;
+  background-clip: border-box;
+  width: 30em;
+  height: 20em;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#login-text {
+  background: linear-gradient(
+    to right,
+    rgb(38, 114, 201),
+    rgba(95, 170, 255, 1),
+    rgb(57, 125, 204)
+  );
+  /* background: rgb(33, 160, 245); */
+  color: white;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
+}
+
+#form-grid {
+  display: grid;
+  margin-top: 3em;
+
+  grid-template-rows: auto auto auto;
+  gap: 1em;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-items {
+  height: 50px;
+  width: 450px;
+}
+
+#email {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: left;
+}
+
+#password {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: left;
+}
+
+#email-input,
+#password-input {
+  padding: 0.5em;
+  padding-right: 4em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* #email-input{
+} */
+
+#label {
+  margin-left: 3em;
+  margin-right: 0.5em;
+  margin-top: 0.445em;
+  width: 90px;
+  display: inline-block;
+  text-align: right;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  /* background: linear-gradient(to right , rgb(38, 114, 201), rgba(95, 170, 255, 1), rgb(86, 88, 90)); */
+  box-shadow: inset 0 0 2000px rgba(87, 87, 87, 0.5);
+
+  height: 5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.button {
+  margin-right: 3em;
+}
+
+.button-design {
+  border: none;
+  padding: 0.5em;
+
+  border-radius: 5px;
+  font-size: larger;
+  transition: all 200ms ease-in-out;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(37, 37, 37); */
+
+  background: rgb(52, 147, 255);
+}
+
+.button-design:hover {
+  /* background: rgb(95, 169, 255); */
+
+  background: rgb(255, 255, 255);
+  color: rgb(52, 147, 255);
+}
+
+.button-design:focus {
+  background: rgb(255, 255, 255);
+  color: rgb(52, 147, 255);
+}
+
+.newusr {
+  margin-right: 1em;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
+  font-size: larger;
+  letter-spacing: 0.1rem;
+}
+
+.ghost {
+  font-size: 3rem;
+  margin-right: auto;
+  margin-left: 1em;
+  color: rgb(52, 147, 255);
+  transition: all 400ms ease-in-out;
+  animation-name: ghost-jump;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  /* animation-play-state: running; */
+  animation-timing-function: ease-in-out;
+}
+
+.ghost:hover {
+  /* font-size: 4rem; */
+  color: rgb(255, 255, 255);
+  /* transform: scale(1.15); */
+  animation-name: ghost;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  /* transform: rotate(45deg); */
+}
+
+@keyframes ghost {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ghost-jump {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 500px) {
+  #login-box {
+    transform: scale(0.6);
+
+    position: unset;
+    margin: auto;
+    width: auto;
+  }
+
+  .newusr {
+    margin-right: 0.1em;
+    margin-left: 0em;
+    font-size: 0.7rem;
+  }
+
+  .ghost {
+    margin-right: auto;
+    margin-left: 0.3em;
+    animation: none;
+    transform: scale(0.9)
+    
+  }
+
+  .ghost:hover{
+    animation: none;
+
+  }
+
+
+  .button {
+    margin-right: 0.3em;
+    transform: scale(0.75)
+  }
+
+  #form-grid {
+    transform: translateX(1em);
+  }
+  
+}
