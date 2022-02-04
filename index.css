@@ -261,11 +261,21 @@ hr{
     position: absolute;
     transition: transform 200ms ease;
     padding: 0.2em;
+    font-size: small;
     border-radius: 15px;
     background-color: rgb(255, 76, 76);
     z-index: -1;
     transition: transform 200ms ease, z-index 0ms ease-in-out 100ms;
     
+}
+
+.second{
+    transition-delay: 100ms;
+
+}
+.third{
+    transition-delay: 200ms;
+
 }
 
 .partners-grid-items:hover > .first{
@@ -276,13 +286,13 @@ hr{
 }
 
 .partners-grid-items:hover > .second{
-    transform: translate(90px, -60px);
+    transform: translate(90px, -85px);
     z-index: 3;
 
     
 }
 .partners-grid-items:hover > .third{
-    transform: translate(90px, 0px);
+    transform: translate(90px, -55px);
     z-index: 3;
 
     
