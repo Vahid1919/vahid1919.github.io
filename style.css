@@ -1,0 +1,64 @@
+body {
+    background-color: #1a1a1a; /* Dark mode background color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-picture{
+    display: block;
+    max-width: 20%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.img-container{
+    display: flex;
+    gap: 2em;
+}
+
+.mood-img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+h1{
+    color: rgb(235, 235, 132);
+}
+
+.top-flex{
+    display: flex;
+    gap: 50%;
+}
