@@ -62,3 +62,16 @@ h1{
     display: flex;
     gap: 50%;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p::first-letter{
+    font-size: calc(18px * 1.5);
+}
+
