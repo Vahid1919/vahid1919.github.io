@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("background.png");
+    
+}
+
+main{
+    border: 10px solid white;
+    margin: 0 10%;
+    background-color: white;
+}
+
+header{
+    background-color: #A8F0F0;
+    text-align: right;
+}
+
+img{
+    float: inline-end;
+}
+
+.tagline{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+section{
+    border: 4px solid #C2E9E9;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.date{
+    border-bottom: 2px dashed blue;
+    margin-right: 0.5rem;
+}
