@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>Box Size:</h3>
+            <form class="box-size-form" action="">
+                <div>
+                    <label for="width">Width: </label><input type="number" name="width" id="width"><label for="width"> px</label>
+
+                </div>
+                <div>
+                    <label for="height">Height: </label><input type="number" name="height" id="height"><label for="height"> px</label>
+                </div>
+                <button id="box-size-button" type="submit">Set Width/Height</button>
+            </form>
+        </section>
+        <section>
+            <h3>Box Border:</h3>
+            <form class="box-border-form" action="">
+                <div class="border-width-container">
+                    <label for="border-width">Width: </label><input type="number" name="width" id="border-width">
+                    <button id="border-width-button" type="submit">Set Border Size</button>
+                </div>
+                <div class="style-color-container">
+                    <span>Border Color: </span>
+                    <button class="green" id="border-green">
+                        Green
+                    </button>
+                    <button class="red" id="border-red">
+                        Red
+                    </button>
+                    <button class="orange" id="border-orange">
+                        Orange
+                    </button>
+                </div>
+                <div class="style-color-container">
+                    <span>Border Style: </span>
+                    <button id="style-solid">
+                        Solid
+                    </button>
+                    <button id="style-dotted">
+                        Dotted
+                    </button>
+                    <button id="style-dashed">
+                        Dashed
+                    </button>
+                </div>
+
+            </form>
+
+
+
+        </section>
+        <section>
+            <h3>Box Background Color:</h3>
+            <form class="box-border-form" action="">
+    
+                <div class="style-color-container">
+                    <span>Background Color: </span>
+                    <button class="green" id="background-green">
+                        Green
+                    </button>
+                    <button class="red" id="background-red">
+                        Red
+                    </button>
+                    <button class="orange" id="background-orange">
+                        Orange
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+    <div id="box">
+
+    </div>
+</body>
+
+</html>
